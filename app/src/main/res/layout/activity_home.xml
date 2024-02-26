@@ -5,7 +5,5 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
-
-    <include layout="@layout/slide_screen_1"/>
-
+    <include layout="@layout/slides"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="btn_input" parent="Widget.MaterialComponents.Button">
+        <item name="colorPrimary">@color/light_blue</item>
+    </style>
+    <style name="input" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="colorPrimary">@color/light_black2</item>
+    </style>
+    <style name="button_next" parent="Widget.MaterialComponents.Button">
+        <item name="colorPrimary">@color/black</item>
+    </style>
+</resources>

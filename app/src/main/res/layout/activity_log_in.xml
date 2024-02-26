@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="328dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_enter_frame_img" />
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:textColorHint="@color/light_black1">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/style_input"
+                    android:drawableRight="@drawable/ic_mail"
+                    android:fontFamily="@font/montserrat_300"
+                    android:gravity="center|left"
+                    android:hint="Enter your email" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:textColorHint="@color/light_black1">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/style_input"
+                    android:drawableRight="@drawable/ic_lock"
+                    android:fontFamily="@font/montserrat_300"
+                    android:gravity="center|left"
+                    android:hint="Password" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="300dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="25dp">
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/arial"
+                android:text="Remember me"
+                android:textSize="9dp" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="14dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/arial"
+                android:text="Forget password ?"
+                android:textAlignment="center"
+                android:textColor="#6C63FF"
+                android:textSize="12sp" />
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="91dp"
+            android:layout_marginTop="230dp"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/style_input"
+                android:drawableRight="@drawable/ic_arrow"
+                android:fontFamily="@font/montserrat_700"
+                android:hint="Next"
+                android:textColorHint="@color/white"
+                android:textSize="20dp"
+                android:theme="@style/btn_input"
+                android:id="@+id/btn_next"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat_300"
+                    android:text="New member?"
+                    android:textColorLink="@color/light_blue"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/register_hyper_link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:text="@string/register_now"
+                    android:textColor="@color/light_blue"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
